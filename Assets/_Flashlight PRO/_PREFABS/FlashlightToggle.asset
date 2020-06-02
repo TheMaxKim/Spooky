@@ -14,29 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 12030877dc9e9df4fa7e0f49b26f0ced,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export FlashLight\r\n    .export FLLight\r\n
-    \   .export on\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n
-    \   __refl_const_intnl_udonTypeName: %SystemString, null\r\n    on: %SystemBoolean,
-    null\r\n    FlashLight: %UnityEngineGameObject, null\r\n    FLLight: %UnityEngineGameObject,
-    null\r\n    __0_const_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_const_intnl_SystemUInt32:
+  udonAssembly: ".data_start\r\n\r\n    .export FLLight\r\n\r\n    __refl_const_intnl_udonTypeID:
+    %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
+    \   FLLight: %UnityEngineGameObject, null\r\n    __0_const_intnl_SystemUInt32:
     %SystemUInt32, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
     \       \r\n         # public class FlashlightToggle : UdonSharpBehaviour\r\n.code_start\r\n
-    \       \r\n         # public GameObject FlashLight;\r\n        \r\n         #
-    public GameObject FLLight;\r\n        \r\n         # public bool on;\r\n        \r\n
-    \        # void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n
+    \       \r\n         # public GameObject FLLight;\r\n        \r\n         # void
+    Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        \r\n         # {\r\n        PUSH, __0_intnl_returnTarget_UInt32
+    #Function epilogue\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n        \r\n         # public override void OnPickupUseDown()\r\n
+    \   .export _onPickupUseDown\r\n        \r\n    _onPickupUseDown:\r\n        \r\n
     \       PUSH, __0_const_intnl_SystemUInt32\r\n        \r\n         # {\r\n        \r\n
-    \        # on = false;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n        PUSH,
-    on\r\n        COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n
-    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
-    \       \r\n         # public override void OnPickupUseDown()\r\n    .export _onPickupUseDown\r\n
-    \       \r\n    _onPickupUseDown:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       \r\n         # {\r\n        \r\n         # FLLight.SetActive(!FLLight.activeSelf);\r\n
-    \       PUSH, FLLight\r\n        PUSH, __0_intnl_SystemBoolean\r\n        EXTERN,
-    \"UnityEngineGameObject.__get_activeSelf__SystemBoolean\"\r\n        PUSH, __0_intnl_SystemBoolean\r\n
-    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \        # FLLight.SetActive(!FLLight.activeSelf);\r\n        PUSH, FLLight\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineGameObject.__get_activeSelf__SystemBoolean\"\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        PUSH, __1_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
     \       PUSH, FLLight\r\n        PUSH, __1_intnl_SystemBoolean\r\n        EXTERN,
     \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n        PUSH,
     __0_intnl_returnTarget_UInt32 #Function epilogue\r\n        COPY\r\n        JUMP_INDIRECT,
@@ -190,169 +186,99 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 147
-      endSourceChar: 175
+      endSourceChar: 174
       line: 9
       lineChar: 11
-      spanCodeSection: "GameObject FlashLight;\r\n    "
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 175
-      endSourceChar: 182
-      line: 10
-      lineChar: 4
-      spanCodeSection: 'public '
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 182
-      endSourceChar: 182
-      line: 10
-      lineChar: 11
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 182
-      endSourceChar: 207
-      line: 10
-      lineChar: 11
-      spanCodeSection: "GameObject FLLight;\r\n    "
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 207
-      endSourceChar: 214
-      line: 11
-      lineChar: 4
-      spanCodeSection: 'public '
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 214
-      endSourceChar: 214
-      line: 11
-      lineChar: 11
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 214
-      endSourceChar: 230
-      line: 11
-      lineChar: 11
-      spanCodeSection: "bool on;\r\n\r\n    "
+      spanCodeSection: "GameObject FLLight;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 7
-      startSourceChar: 230
-      endSourceChar: 248
-      line: 13
+      startSourceChar: 174
+      endSourceChar: 192
+      line: 11
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 8
-      endInstruction: 7
-      startSourceChar: 248
-      endSourceChar: 259
-      line: 14
+      endInstruction: 27
+      startSourceChar: 192
+      endSourceChar: 208
+      line: 12
       lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 8
-      endInstruction: 7
-      startSourceChar: 259
-      endSourceChar: 259
+      spanCodeSection: "{\r\n    }\r\n\r\n    "
+    - startInstruction: 28
+      endInstruction: 35
+      startSourceChar: 208
+      endSourceChar: 252
       line: 15
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 8
-      endInstruction: 7
-      startSourceChar: 259
-      endSourceChar: 259
-      line: 15
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 8
-      endInstruction: 7
-      startSourceChar: 259
-      endSourceChar: 264
-      line: 15
-      lineChar: 8
-      spanCodeSection: 'on = '
-    - startInstruction: 8
-      endInstruction: 47
-      startSourceChar: 264
-      endSourceChar: 285
-      line: 15
-      lineChar: 13
-      spanCodeSection: "false;\r\n    }\r\n\r\n    "
-    - startInstruction: 48
-      endInstruction: 55
-      startSourceChar: 285
-      endSourceChar: 329
-      line: 18
       lineChar: 4
       spanCodeSection: "public override void OnPickupUseDown()\r\n    "
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 329
-      endSourceChar: 340
-      line: 19
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 252
+      endSourceChar: 263
+      line: 16
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 340
-      endSourceChar: 340
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 263
+      endSourceChar: 263
+      line: 17
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 340
-      endSourceChar: 340
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 263
+      endSourceChar: 263
+      line: 17
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 340
-      endSourceChar: 340
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 263
+      endSourceChar: 263
+      line: 17
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 340
-      endSourceChar: 348
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 263
+      endSourceChar: 271
+      line: 17
       lineChar: 8
       spanCodeSection: FLLight.
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 348
-      endSourceChar: 358
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 271
+      endSourceChar: 281
+      line: 17
       lineChar: 16
       spanCodeSection: SetActive(
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 358
-      endSourceChar: 359
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 281
+      endSourceChar: 282
+      line: 17
       lineChar: 26
       spanCodeSection: '!'
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 359
-      endSourceChar: 359
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 282
+      endSourceChar: 282
+      line: 17
       lineChar: 27
       spanCodeSection: 
-    - startInstruction: 56
-      endInstruction: 55
-      startSourceChar: 359
-      endSourceChar: 367
-      line: 20
+    - startInstruction: 36
+      endInstruction: 35
+      startSourceChar: 282
+      endSourceChar: 290
+      line: 17
       lineChar: 27
       spanCodeSection: FLLight.
-    - startInstruction: 56
-      endInstruction: 56
-      startSourceChar: 367
-      endSourceChar: 367
-      line: 20
+    - startInstruction: 36
+      endInstruction: 36
+      startSourceChar: 290
+      endSourceChar: 290
+      line: 17
       lineChar: 35
       spanCodeSection: 
   hasInteractEvent: 0
@@ -378,13 +304,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: FlashLight
+      Data: FLLight
     - Name: $v
       Entry: 7
       Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -411,10 +337,10 @@ MonoBehaviour:
       Data: UnityEngineGameObject
     - Name: symbolOriginalName
       Entry: 1
-      Data: FlashLight
+      Data: FLLight
     - Name: symbolUniqueName
       Entry: 1
-      Data: FlashLight
+      Data: FLLight
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -424,126 +350,6 @@ MonoBehaviour:
     - Name: fieldAttributes
       Entry: 7
       Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: userBehaviourSource
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: FLLight
-    - Name: $v
-      Entry: 7
-      Data: 6|UdonSharp.FieldDefinition, UdonSharp.Editor
-    - Name: fieldSymbol
-      Entry: 7
-      Data: 7|UdonSharp.SymbolDefinition, UdonSharp.Editor
-    - Name: internalType
-      Entry: 9
-      Data: 4
-    - Name: declarationType
-      Entry: 3
-      Data: 1
-    - Name: syncMode
-      Entry: 3
-      Data: 0
-    - Name: symbolResolvedTypeName
-      Entry: 1
-      Data: UnityEngineGameObject
-    - Name: symbolOriginalName
-      Entry: 1
-      Data: FLLight
-    - Name: symbolUniqueName
-      Entry: 1
-      Data: FLLight
-    - Name: symbolDefaultValue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fieldAttributes
-      Entry: 7
-      Data: 8|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: userBehaviourSource
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: on
-    - Name: $v
-      Entry: 7
-      Data: 9|UdonSharp.FieldDefinition, UdonSharp.Editor
-    - Name: fieldSymbol
-      Entry: 7
-      Data: 10|UdonSharp.SymbolDefinition, UdonSharp.Editor
-    - Name: internalType
-      Entry: 7
-      Data: 11|System.RuntimeType, mscorlib
-    - Name: 
-      Entry: 1
-      Data: System.Boolean, mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: declarationType
-      Entry: 3
-      Data: 1
-    - Name: syncMode
-      Entry: 3
-      Data: 0
-    - Name: symbolResolvedTypeName
-      Entry: 1
-      Data: SystemBoolean
-    - Name: symbolOriginalName
-      Entry: 1
-      Data: on
-    - Name: symbolUniqueName
-      Entry: 1
-      Data: on
-    - Name: symbolDefaultValue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fieldAttributes
-      Entry: 7
-      Data: 12|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
