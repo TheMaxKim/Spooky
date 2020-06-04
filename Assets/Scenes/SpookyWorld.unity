@@ -18,15 +18,15 @@ RenderSettings:
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.07
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_LinearFogStart: 1
+  m_LinearFogEnd: 500
+  m_AmbientSkyColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 51b74d7bad397457d883c5940f7664d8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -198,12 +198,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 325ac95089e8f4d40b483feb831c1445, type: 2}
+      objectReference: {fileID: 2100000, guid: f473294898c06b34ea36eabc9ccf04a7, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 856f7c5b674991c49b0d009e1840ee77, type: 2}
+      objectReference: {fileID: 2100000, guid: 325ac95089e8f4d40b483feb831c1445, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicPrefabs.Array.data[0]
@@ -258,17 +258,17 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: ca36bba37e277ff49ba531d2e56c8ba0, type: 2}
+      objectReference: {fileID: 2100000, guid: 856f7c5b674991c49b0d009e1840ee77, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: 0f3b501efc852ef47bfc03887e6322c4, type: 2}
+      objectReference: {fileID: 2100000, guid: ca36bba37e277ff49ba531d2e56c8ba0, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[4]
       value: 
-      objectReference: {fileID: 2100000, guid: f473294898c06b34ea36eabc9ccf04a7, type: 2}
+      objectReference: {fileID: 2100000, guid: 0f3b501efc852ef47bfc03887e6322c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8894fa7e4588a5c4fab98453e558847d, type: 3}
 --- !u!1 &519420028
@@ -306,7 +306,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -363,6 +363,10 @@ PrefabInstance:
     - target: {fileID: 163338, guid: cd3416a6da16716418740d59e9e827f2, type: 3}
       propertyPath: m_Name
       value: Birch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 163338, guid: cd3416a6da16716418740d59e9e827f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 499738, guid: cd3416a6da16716418740d59e9e827f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -500,6 +504,10 @@ PrefabInstance:
     - target: {fileID: 137706, guid: ba3104f5f654c534993663b7d01f459c, type: 3}
       propertyPath: m_Name
       value: Birch_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137706, guid: ba3104f5f654c534993663b7d01f459c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 472572, guid: ba3104f5f654c534993663b7d01f459c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5832,6 +5840,10 @@ PrefabInstance:
     - target: {fileID: 101338, guid: ba4e41428fde198418a7b99cf6afba5b, type: 3}
       propertyPath: m_Name
       value: Birch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 101338, guid: ba4e41428fde198418a7b99cf6afba5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 451534, guid: ba4e41428fde198418a7b99cf6afba5b, type: 3}
       propertyPath: m_LocalPosition.x
