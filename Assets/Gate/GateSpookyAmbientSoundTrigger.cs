@@ -6,10 +6,7 @@ using VRC.Udon;
 
 public class GateSpookyAmbientSoundTrigger : UdonSharpBehaviour
 {
-
-    bool spookyAmbienceTriggered;
-
-    [SerializeField] AmbientAudioController ambientAudioController;
+    [SerializeField] WorldProgressionController worldProgressionController;
 
     void Start()
     {
@@ -18,10 +15,6 @@ public class GateSpookyAmbientSoundTrigger : UdonSharpBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!spookyAmbienceTriggered)
-        {
-            spookyAmbienceTriggered = true;
-            ambientAudioController.LoopSpookyAmbience();
-        }
+        worldProgressionController.InitiateSpooky();
     }
 }
