@@ -8,7 +8,6 @@ public class AmbientAudioController : UdonSharpBehaviour
 {
     public AudioSource ForestAmbience;
     public AudioSource SpookyAmbience;
-    public GameObject GateEventCollider;
 
     public float forestAmbienceMaxDelay = 15f;
 
@@ -19,10 +18,21 @@ public class AmbientAudioController : UdonSharpBehaviour
 
     void Update()
     {
+        LoopForestAmbience();
+    }
+
+    private void LoopForestAmbience()
+    {
         if (!ForestAmbience.isPlaying)
         {
             float forestAmbienceDelay = Random.Range(0f, forestAmbienceMaxDelay);
             ForestAmbience.PlayDelayed(forestAmbienceDelay);
         }
+    }
+
+    public void LoopSpookyAmbience()
+    {
+        SpookyAmbience.loop = true;
+        SpookyAmbience.Play();
     }
 }
